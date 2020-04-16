@@ -17,9 +17,17 @@ target/
 .settings/
 *.sublime-workspace
 .vscode/*
+/.vs
+/obj/
+/bin/
 
 ### Test
 logs
 
 ### MacOS
 .DS_Store
+/consumers/csharp/csharp-client/obj
+/consumers/csharp/csharp-pact-consumer/obj
+/providers/csharp/.vs/csharp
+/providers/csharp/csharp-api/obj
+/providers/csharp/csharp-pact-provider/obj
