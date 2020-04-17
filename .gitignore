@@ -31,3 +31,7 @@ logs
 /providers/csharp/.vs/csharp
 /providers/csharp/csharp-api/obj
 /providers/csharp/csharp-pact-provider/obj
+/consumers/csharp/csharp-client/bin/Debug
+/consumers/csharp/csharp-pact-consumer/bin/Debug/netcoreapp3.1
+/providers/csharp/csharp-api/bin/Debug
+/providers/csharp/csharp-pact-provider/bin/Debug/netcoreapp3.1
