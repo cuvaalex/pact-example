@@ -1,25 +1,32 @@
 ﻿using System;
+using System.IO;
 using PactNet;
 using PactNet.Mocks.MockHttpService;
+using PactNet.Models;
 
-namespace APIConsumer
+namespace APIConsumer.Tests
 {
     public class UserClientConsumerPact : IDisposable
     {
-        public IPactBuilder PactBuilder { get; private set; }
-        public IMockProviderService MockProviderService { get; private set; }
+        public IPactBuilder PactBuilder { get; }
+        public IMockProviderService MockProviderService { get; }
 
         public int MockServerPort => 9222;
         public string MockProviderServiceBaseUri => $"http://localhost:{MockServerPort}";
 
-        public UserClientConsumerPact() 
+        public UserClientConsumerPact()
         {
-            PactBuilder = new PactBuilder(new PactConfig {LogDir = @"..\..\..\logs", PactDir = @"..\..\..\pacts", SpecificationVersion = "2.0.0"});
-            PactBuilder.ServiceConsumer("cs-csharp")
-                .HasPactWith("userservice");
-            MockProviderService = PactBuilder.MockService(MockServerPort);
-        }
+            PactBuilder = new PactBuilder(new PactConfig
+                {
+                    SpecificationVersion = "2.0.0",
+                    LogDir = $"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}logs{Path.DirectorySeparatorChar}",
+                    PactDir = $"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}pacts{Path.DirectorySeparatorChar}"
+                })
+                .ServiceConsumer("User API Consumer")
+                .HasPactWith("User API");
 
+            MockProviderService = PactBuilder.MockService(MockServerPort, false, IPAddress.Any);
+        }
 
         public void Dispose()
         {

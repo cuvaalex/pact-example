@@ -1,23 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "consumers", "consumers", "{CEE7C10D-051A-4937-A81E-823072D664DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp", "csharp", "{5FD1D14E-BE0E-4958-B964-C522CD0FDD55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-client", "consumers\csharp\csharp-client\csharp-client.csproj", "{159916C8-8A26-4388-B0D9-C5F72D3BBDB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp-client", "consumers\csharp\csharp-client\csharp-client.csproj", "{159916C8-8A26-4388-B0D9-C5F72D3BBDB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "providers", "providers", "{EAB39608-05E9-40FE-BA59-0D6195298F57}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp", "csharp", "{5FC8094C-D9CB-4367-BD8A-150FF6F5EF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-api", "providers\csharp\csharp-api\csharp-api.csproj", "{5FCE1E42-5D5E-409D-847D-64D95F7D1093}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp-api", "providers\csharp\csharp-api\csharp-api.csproj", "{5FCE1E42-5D5E-409D-847D-64D95F7D1093}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-pact-provider", "providers\csharp\csharp-pact-provider\csharp-pact-provider.csproj", "{246669BD-34E6-49D4-9C92-E88CB76656A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp-pact-provider", "providers\csharp\csharp-pact-provider\csharp-pact-provider.csproj", "{246669BD-34E6-49D4-9C92-E88CB76656A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-pact-consumer", "consumers\csharp\csharp-pact-consumer\csharp-pact-consumer.csproj", "{80F7D7A2-9E26-4785-854C-D696C43DA9D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp-pact-consumer", "consumers\csharp\csharp-pact-consumer\csharp-pact-consumer.csproj", "{80F7D7A2-9E26-4785-854C-D696C43DA9D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{159916C8-8A26-4388-B0D9-C5F72D3BBDB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,7 +44,6 @@ Global
 		{5FCE1E42-5D5E-409D-847D-64D95F7D1093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FCE1E42-5D5E-409D-847D-64D95F7D1093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FCE1E42-5D5E-409D-847D-64D95F7D1093}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{5FCE1E42-5D5E-409D-847D-64D95F7D1093}.Debug|x64.Build.0 = Debug|Any CPU
 		{5FCE1E42-5D5E-409D-847D-64D95F7D1093}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{5FCE1E42-5D5E-409D-847D-64D95F7D1093}.Debug|x86.Build.0 = Debug|Any CPU
 		{5FCE1E42-5D5E-409D-847D-64D95F7D1093}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,7 +55,6 @@ Global
 		{246669BD-34E6-49D4-9C92-E88CB76656A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{246669BD-34E6-49D4-9C92-E88CB76656A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246669BD-34E6-49D4-9C92-E88CB76656A9}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{246669BD-34E6-49D4-9C92-E88CB76656A9}.Debug|x64.Build.0 = Debug|Any CPU
 		{246669BD-34E6-49D4-9C92-E88CB76656A9}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{246669BD-34E6-49D4-9C92-E88CB76656A9}.Debug|x86.Build.0 = Debug|Any CPU
 		{246669BD-34E6-49D4-9C92-E88CB76656A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +76,9 @@ Global
 		{80F7D7A2-9E26-4785-854C-D696C43DA9D8}.Release|x86.ActiveCfg = Release|Any CPU
 		{80F7D7A2-9E26-4785-854C-D696C43DA9D8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5FD1D14E-BE0E-4958-B964-C522CD0FDD55} = {CEE7C10D-051A-4937-A81E-823072D664DF}
 		{159916C8-8A26-4388-B0D9-C5F72D3BBDB9} = {5FD1D14E-BE0E-4958-B964-C522CD0FDD55}
@@ -88,5 +86,8 @@ Global
 		{5FCE1E42-5D5E-409D-847D-64D95F7D1093} = {5FC8094C-D9CB-4367-BD8A-150FF6F5EF33}
 		{246669BD-34E6-49D4-9C92-E88CB76656A9} = {5FC8094C-D9CB-4367-BD8A-150FF6F5EF33}
 		{80F7D7A2-9E26-4785-854C-D696C43DA9D8} = {5FD1D14E-BE0E-4958-B964-C522CD0FDD55}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {366884DF-5A9E-49A1-A0FB-3CC35882CA21}
 	EndGlobalSection
 EndGlobal

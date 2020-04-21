@@ -8,8 +8,8 @@ namespace APIConsumer
 {
     interface IUserClient
     {
-        Task<User> GetUser(long id);
+        User GetUserById(Guid id);
         Task<User> CreateUser(User receivedUser);
-        Task<User> UpdateUser(long id, User updatedUser);
+        Task<User> UpdateUser(Guid id, User updatedUser);
     }
 }

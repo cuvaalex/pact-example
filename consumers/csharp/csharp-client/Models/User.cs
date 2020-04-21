@@ -7,8 +7,8 @@ namespace APIConsumer.Models
 {
     public class User
     {
-        [JsonPropertyName("id")]
-        public long Id { get; set; }
+        [JsonPropertyName("userid")]
+        public Guid UserId { get; set; }
         [JsonPropertyName("firstname")]
         public String FirstName { get; set; }
         [JsonPropertyName("lastname")]

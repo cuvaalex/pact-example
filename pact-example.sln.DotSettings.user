@@ -3,4 +3,10 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::80F7D7A2-9E26-4785-854C-D696C43DA9D8::.NETCoreApp,Version=v3.1::APIConsumer.UserClientConsumerTest.When_user_exist_it_return_the_user&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed5988e5_002D0b72_002D4f05_002Dbc15_002Dfee9b28b6388/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from UserClientConsumerTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;80F7D7A2-9E26-4785-854C-D696C43DA9D8/f:UserClientConsumerTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ff68d0dc_002Db752_002D472c_002Dacb6_002D86a838daee8c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
